@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REKEMGOLD Cake Shop</title>
+  <link rel="stylesheet" href="try.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="RKG Baker'sdesign Cake.jpg" alt="ReKemGold logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cakes">Cakes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#blog">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">2</span>
+    </div>
+
+    <input type="text" id="search" placeholder="Search cakes..." oninput="filterCakes()">
+  </header>
+   
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="hero">
+      <h1>Delicious Cakes for Every Occasion</h1>
+      <p>Order now and sweeten your day!</p>
+      <a href="#cakes" class="btn">Shop Now</a>
+    </section>
+
+    <section id="cakes" class="cakes">
+      <h2>Our Cakes</h2>
+      <div class="cake-grid">
+        <div class="cake">
+          <img src="/chocolatee cake.png" alt="Chocolate Cake" />
+          <h3>Chocolate Delight</h3>
+          <p>#45,000</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="cake">
+          <img src="RKG Baker'sdesign Cake.jpg" alt="Vanilla Cake" />
+          <h3>Bakers' Choice</h3>
+          <p>#560,OOO</p>
+          <button>Add to Cart</button>
+        </div>        
+         <div class="cake">
+          <img src="classic vanilla cake.png" alt="Vanilla Cake" />
+          <h3>Tasty Vanilla</h3>
+          <p>#350,000</p>
+          <button>Add to Cart</button>
+        </div>
+         <div class="cake">
+          <img src="RKG Small chops.jpg" alt="small chops" />
+          <h3>Small Surprise package</h3>
+          <p>#100,000</p>
+          <button>Add to Cart</button>
+        </div>
+         <div class="cake">
+          <img src="RKG Wedding Cakee.jpg" alt="odogwu Cake" />
+          <h3>Odogwu's Choice</h3>
+          <p>#790,000</p>
+          <button>Add to Cart</button>
+        </div>
+         <div class="cake">
+          <img src="RKG Spongebob Birthday Cake.jpg" alt="spongebob cake" />
+          <h3>SpongeBob Yummy Cake</h3>
+          <p>#34,000</p>
+          <button>Add to Cart</button>
+        </div>
+         <div class="cake">
+          <img src="RKG Wedding Cake.jpg" alt="achalugo Cake" />
+          <h3>Achalugo Dream Cake</h3>
+          <p>#1.2M</p>
+          <button>Add to Cart</button>
+        </div> 
+        <div class="cake">
+          <img src="RKG House Cake.jpg" alt="house Warming Cake" />
+          <h3>House Warming Cake</h3>
+          <p>#1.2M</p>
+          <button>Add to Cart</button>
+        </div>       
+        <!-- Add more cakes as needed -->
+      </div>
+    </section>
+
+     <main>
+        <article id="about">
+            <h2>About <abbr title="ReKemGold Cakes">RKG</abbr></h2>
+            <p>
+                <abbr title="ReKemGold Cakes">RKG</abbr> was founded in <time datetime="2019">2019</time> Our business was built from the  <strong>love of cakes and flavoring people's events with our magic product</strong>. We hope to serve you better and help build a healthy food-style as well as beautify your occasions with our heavenly-tasty cakes.
+            </p>
+        </article>
+    </main>
+       <!-- Customer Reviews  -->
+    <section id="reviews">
+      <section id="reviews" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Customer Reviews</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <!-- <img src="chocolatee cake.png" class="card-img-top" alt="Review 1"> -->
+            <div class="card-body">
+              <p class="card-text">"The chocolate cake was absolutely delicious! Will order again."</p>
+              <footer class="blockquote-footer">John Feyikemi</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <!-- <img src="classic vanilla cake.png"  style="width: auto; height: 200px;" class="card-img-top" alt="Review 2"> -->
+        </div>
+            <div class="card-body">
+              <p class="card-text">"Amazing service and the cakes are always fresh and tasty."</p>
+              <footer class="blockquote-footer">Sharon Adewole</footer>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <!-- <img src="Red Velvet Cake.png" class="card-img-top" alt="Review 3"> -->
+            <div class="card-body">
+              <p class="card-text">"Best bakery in town! Highly recommend their red velvet cake."</p>
+              <footer class="blockquote-footer">Ugbelem Adana</footer>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4">
+          <div class="card">
+            <!-- <img src="RKG Cupcake.jpg" class="card-img-top" alt="Review 3"> -->
+            <div class="card-body">
+              <p class="card-text">"As a sweet-tooth that i am, i will say you make the best cupcakes ever."</p>
+              <footer class="blockquote-footer">Moyosoreoluwa Poopola</footer>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+  <section id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="contactName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="contactName" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactEmail" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="contactEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="contactMessage" class="form-label">Your Message</label>
+          <textarea class="form-control" id="contactMessage" rows="3" required></textarea>
+          <button type="submit" class="btn btn-primary" style="color: blue;">Submit</button>
+       
+        <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>At ReKemGold, we bake with love and only the finest ingredients to house warming. From birthdays to weddings, we make every moment sweet and memorable.</p>
+    </section>
+
+    <section id="cart">
+     <h2>Your Cart</h2>
+     <div class="cart-items"></div>
+     <p>Total: <span id="total">0</span></p>
+     <button>Proceed to Checkout</button>
+    </section>
+
+  </main>
+
+  <script src="try.js"></script>
+  <!-- Footer -->
+  <footer>
+  <h3>Follow Us</h3>
+  <div class="social media">
+    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+        <p>Contact us at <a href="mailto:info@ReKemgoldcakes.com">info@ReKemgoldcakes.com</a></p>
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">  <p>Contact us at <a href="mailto:info@ReKemgoldcakes.com">info@ReKemgoldcakes.com</a></p>
+
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+        <p>Contact us at <a href="mailto:info@ReKemgoldcakes.com">info@ReKemgoldcakes.com</a></p>
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <!-- <h3>Latest Blogs</h3>
+  <ul>
+    <li><a href="blog.html#post1">The Art of Cake Decoration</a></li>
+    <li><a href="blog.html#post2">Top 5 Cake Flavors You Must Try</a></li>
+    <li><a href="blog.html#post3">How to Store Cakes for Freshness</a></li>
+  </ul> -->
+
+  <p>Contact us at <a href="mailto:info@ReKemgoldcakes.com">info@ReKemgoldcakes.com</a></p>
+  <p>&copy; 2022 ReKemGold Cakes. All rights reserved.</p>
+</footer>
+</body>
+</html>

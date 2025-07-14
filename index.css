@@ -1,0 +1,385 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+.header-container{
+  display: flex;
+  background: linear-gradient(to right);
+  padding: 3px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 0.6em 1.5rem; */
+  background-color: #0d1b2a; /* deep blue */
+  color: #f9c74f;           /*gold */
+  position:relative;
+  top: 0;
+  left: -1;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight:bold;
+  margin-bottom: 10px;
+}
+
+.logo-icon {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  /* color: #663399; */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* .nav-menu a:hover {
+  color: #d6336c;
+} */
+
+/* Hamburger icon for mobile */
+.hamburger {
+  /* display: none; */
+  font-size: 28px;
+  cursor: pointer;
+}
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .cake-header {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+  /* justify-content: center;  */
+   justify-content: space-between;
+  align-items: center;
+}
+
+.nav img {
+  max-width: 100%;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navlinks-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  font-size: 12px;
+  font-weight: 450;
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+.nav-cta {
+  margin-left: 30px;
+  background-color: var(--secondary-color);
+  color: var(--neutral-color);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #333333; /* Text color */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.nav-cta:hover {
+  color: var(--secondary-color);
+  background-color: var(--neutral-color);
+  border: var(--secondary-color) 2px solid;
+}
+
+/* Logo/brand */
+.logo .brand {
+  font-size: 1.2em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #f9c74f;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: color 0.3s;
+}
+
+/* .nav-links a:hover {
+  color: #ffd166;
+} */
+
+ /* Push content down to clear fixed header  *
+body {
+  padding-top: 80px;
+}
+
+
+/* nav a {
+  color: #f9c74f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+} */
+
+.gallery {
+  padding: 2rem;
+  background: #fff0f5;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cake {
+  /* background: white; */
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.cake img {
+  /* width: 100%; */
+  border-radius: 8px;
+}
+
+.cake button {
+  margin-top: 0.5rem;
+  /* background: #ff6f61; */
+  /* color: white; */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.oval-section {
+  background: linear-gradient(145deg, #f9c74f 30%, #0d1b2a 70%);
+  color: #fff;
+  margin: 3em auto;
+  width: 90%;
+  padding: 2em;
+  border-radius: 50px / 25px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.oval-section h2 {
+  margin-bottom: 1em;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form button {
+  background-color: #f9c74f;
+  color: #0d1b2a;
+  font-weight: bold;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  /* transition: background 0.3s; */
+}
+
+.form button:hover {
+  background-color: #ffd166;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #25d366;
+  color: white;
+  font-weight: bold;
+  padding: 0.8em 1.5em;
+  border-radius: 25px;
+  text-decoration: none;
+  /* transition: background 0.3s; */
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebd5a;
+}
+
+/* Reviews */
+.review {
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1b2a;
+  color: blue;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  .cake-footer {
+  background-color: #fff0f5;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', cursive, sans-serif;
+  border-top: 2px solid #ffe6e6;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: goldenrod;
+}
+
+.footer-section p, .footer-section a {
+  font-size: 15px;
+  text-decoration: none;
+  color:blue;
+  margin: 4px 0;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin-right: 12px;
+  color: blue;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: goldenrod;
+}
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    display: block;
+    gap: 0.5em;
+  }
+
+  .oval-section {
+    width: 95%;
+    padding: 1.5em 1em;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
