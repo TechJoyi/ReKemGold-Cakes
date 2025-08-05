@@ -4,21 +4,23 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff;
   color: #333;
+  padding-top: 20px;
 }
 
 /* Header */
 .header-container{
   display: flex;
   background: linear-gradient(to right);
-  padding: 3px 15px;
+  padding: 8px 15px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10px;
 
   /* padding: 0.6em 1.5rem; */
-  background-color: #0d1b2a; /* deep blue */
+  background-color: #06496f; /* deep blue */
   color: #f9c74f;           /*gold */
   position:relative;
   top: 0;
@@ -26,16 +28,20 @@ body {
   z-index: 1000;
 }
 
+ header .logo .brand {
+  font-size: 19px;
+ } 
+
 .logo {
   display: flex;
   align-items: center;
-  font-size: 26px;
-  font-weight:bold;
+  /* font-size: 10px; */
+  font-weight: lighter;
   margin-bottom: 10px;
 }
 
 .logo-icon {
-  font-size: 32px;
+  font-size: 12px;
   margin-right: 10px;
 }
 
@@ -146,7 +152,8 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 28px;
+  border-radius: 12px;
 }
 
 nav ul {
@@ -194,7 +201,7 @@ nav a:hover {
   background: #fff0f5;
 }
 
-.gallery-grid {
+.cake-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -226,7 +233,7 @@ nav a:hover {
 
 
 .oval-section {
-  background: linear-gradient(145deg, #f9c74f 30%, #0d1b2a 70%);
+  background: linear-gradient(145deg, #f9c74f 30%, #06496f 70%);
   color: #fff;
   margin: 3em auto;
   width: 90%;
@@ -261,7 +268,7 @@ nav a:hover {
 
 .form button {
   background-color: #f9c74f;
-  color: #0d1b2a;
+  color: #06496f;
   font-weight: bold;
   padding: 0.8em 2em;
   border: none;
@@ -301,14 +308,13 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: #0d1b2a;
-  color: blue;
+  background-color: #06496f;
+  /* color: whitesmoke; */
   text-align: center;
   padding: 1em 0;
   font-size: 0.9em;
-  .cake-footer {
-  background-color: #fff0f5;
-  padding: 40px 20px 20px;
+ /* background-color: #fff0f5; */
+  /* padding: 40px 20px 20px; */
   font-family: 'Segoe UI', cursive, sans-serif;
   border-top: 2px solid #ffe6e6;
   margin-top: 60px;
@@ -337,7 +343,7 @@ footer {
 .footer-section p, .footer-section a {
   font-size: 15px;
   text-decoration: none;
-  color:blue;
+  color:whitesmoke;
   margin: 4px 0;
 }
 
@@ -364,7 +370,6 @@ footer {
   color: goldenrod;
 }
 
-}
 
 /* Responsive */
 @media (max-width: 768px) {
